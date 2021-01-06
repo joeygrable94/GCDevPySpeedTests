@@ -1,8 +1,9 @@
 # ---------------------------------------------------------------------------
 # IMPORTS
-import os, sys, re, csv, json, math, subprocess
+import os, subprocess
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+
 
 
 # ---------------------------------------------------------------------------
@@ -19,6 +20,7 @@ def RunPageSpeedTests(websites=[]):
 		SeleniumSpeedTestChrome(site)
 
 
+
 # ---------------------------------------------------------------------------
 # Tests Server Time To First Byte
 def TestTTFB(website=''):
@@ -30,6 +32,7 @@ def TestTTFB(website=''):
 	result = process.stdout.decode("utf-8")[:-3]
 	# print output
 	print(result)
+
 
 
 # ---------------------------------------------------------------------------
@@ -68,4 +71,5 @@ def SeleniumSpeedTestChrome(website=''):
 	print("Total Time: %s\n" % overallPerformance_calc )
 	# close the web driver
 	driver.quit()
+
 
