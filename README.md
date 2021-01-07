@@ -3,6 +3,7 @@
 ## Ensure Using Software Versions
 * python 3.8.6
 * pip 20.2.4
+* ttfb shell command (https://github.com/jaygooby/ttfb.sh)
 
 ## Install Dependencies
 * pip install selenium
